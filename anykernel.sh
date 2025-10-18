@@ -32,7 +32,6 @@ set_perm_recursive 0 0 750 750 "$ramdisk/*";
 set_perm_recursive 0 0 750 750 "$ramdisk/init*" "$ramdisk/sbin";
 
 # Apply Image & dtbo
-mv kernels/dtbo.img dtbo.img;
 mv kernels/Image.gz-dtb Image.gz-dtb;
 
 ## AnyKernel install
