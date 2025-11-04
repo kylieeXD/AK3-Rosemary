@@ -31,8 +31,9 @@ ramdisk_compression=auto;
 set_perm_recursive 0 0 750 750 "$ramdisk/*";
 set_perm_recursive 0 0 750 750 "$ramdisk/init*" "$ramdisk/sbin";
 
-# Apply Image & dtbo
-mv kernels/Image.gz-dtb Image.gz-dtb;
+# Apply Image & dtb
+mv kernels/Image.gz Image.gz;
+mv kernels/dtb.img dtb.img;
 
 ## AnyKernel install
 dump_boot;
